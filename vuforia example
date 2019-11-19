@@ -1,0 +1,23 @@
+—VUFORIA—
+https://youtu.be/Wqbg9mB84V4
+
+Resources/ VuforiaConfiguration/ towards bottom is webcam - make sure right one is selected
+Delete main camera
+Go to gameobject/vuforia/arcamera
+- adds new camera to scene (projects view of our camera into the world)
+ - Mobile and webgl usually don’t play well  - together…
+ - Mobile devices seem best
+Add Prefab/ Target Template 
+ - set image target to astronaut
+Add Prefab/ Turret as child
+ - Cannon System script details here
+Add Prefab/ FireCanvas
+ - might need to change YPos to .2
+Add Prefab/ FireButtonVuforia
+ - in Custom Vuforia Button Script - 
+- add Turret object to On Press() AND add CannonSystem/ FireProjectile 
+- add FireButton (in FireCanvas) object to on Press() AND change to UIBtn Pressed material
+- add FireButton (in FireCanvas) object to on Release() AND change to UIBtn material
+Add 2nd Target Template, move position off other,  and select Image Target as Drone
+Add Prefab/ Probe as child
+
